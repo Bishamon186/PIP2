@@ -48,7 +48,7 @@
 			canvas.addEventListener('click',function(evt)
 			{
 				var x = (evt.clientX - canvas.offsetLeft - (x/2))/i; //вычисляем координаты х и у
-				var y = ((x/2) - evt.clientY + canvas.offsetTop )/i; //туточки я чет не поняла принцип раоты :(
+				var y = ((y/2) - evt.clientY + canvas.offsetTop )/i; //туточки я чет не поняла принцип раоты :(
 				if (CheckRadius() == 1)
 				{
 					var r = RadiusValue();
@@ -114,8 +114,7 @@
 		var w = 480;
 		var h =480;
 		var x = w/2;
-		var y = w/2;
-		CheckOnlyOneR(source);//валидируем радиус
+		var y = w/2;		
 
 		var picture = drawDefault();
 		if (picture)
@@ -150,21 +149,21 @@
 	{
    		var y = document.getElementById('y').value.replace(/,/,'.');
 		var str = document.querySelector('div');
-		if (namber.length==0)
+		if (y.length==0)
 		{
 			alert("Поле У должно быть заполнено");
     	    str.innerHTML = "Поле У должно быть заполнено";   	    
        		return false;
     	}
 
-   		if ( parseInt(namber,10) != parseInt(namber,10))
+   		if ( parseInt(y,10) != parseInt(y,10))
    		{
    			alert("Поле У должно быть числом");
        		str.innerHTML = "Поле У должно быть числом"
         	return false;
    		 }
 
-   		if(namber<-3 || namber>3)
+   		if(y<-3 || y>3)
    		{
    			alert("У должно находиться в промежутке (-3;3)");
      	   str.innerHTML = "У должно находиться в промежутке (-3;3)"
@@ -173,3 +172,5 @@
    		
 		return true;
 	}
+
+	

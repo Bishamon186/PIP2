@@ -12,7 +12,7 @@ public class ControllerServlet extends Dispatcher {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
     		throws ServletException, IOException {
         request.setAttribute("Error", "");        
-        request.setAttribute("Result", false);
+
         Double x = 0.0, y = 0.0, r = 0.0;
         boolean checkX = true;
         boolean checkY = true;

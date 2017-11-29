@@ -79,7 +79,7 @@
             }
          %>
         
-        <script type="text/javascript">//Надо как-то точки ставят
+        <script type="text/javascript">//Надо как-то точки ставить
             Point(parseFloat(<%= x%>), parseFloat(<%= y%>), parseFloat(<%= r%>));
 
             function Point(x1,y1,r1)//рисуем яркую красную точечку

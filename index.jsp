@@ -119,8 +119,7 @@
             }
         </script>
         
-         <%
-                    
+         <%                    
                     Vector xResults = new Vector();
                     Vector yResults = new Vector();
                     Vector xResults = new Vector();
